@@ -362,7 +362,10 @@ body {
   padding: 3%;
   /* opacity: .5; */
 }
-
+.img-container .caption
+{
+  margin-top: -45px;
+}
 
 .slide3-content .img-container,
 .slide5-content .img-container {
@@ -398,7 +401,7 @@ body {
   color: white;
 }
 
-#slide4 {}
+
 
 #slide4-header {
   background-color: whitesmoke;
@@ -444,7 +447,7 @@ body {
   margin: 0 auto;
   /* padding: 250px 0; */
   /* color: #fff; */
-  background: rgba(86, 205, 247, .5);
+  background: whitesmoke;
   /* display: none; */
 }
 
