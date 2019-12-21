@@ -35,19 +35,19 @@ onEachFeature: function(feature,layer){
     layer.on("mouseover",function(){
         console.log(feature);
         let loc=feature.properties.location;
+        let picture=feature.properties.pic;
         layer.bindPopup(loc).openPopup();
+        
+        $('#photo-container').css("display","block");
+        $('#foto-frame').html(`<img class="pic-frame" src="${picture}" alt=""></img>`);
      });
      layer.on("mouseout",function(){
         let loc=feature.properties.location;
         layer.bindPopup(loc).closePopup();
-     });
-    layer.on("click",function(e){
+        $('#photo-container').css("display","none");
 
-       let picture=feature.properties.pic;
-        $('#photo-container').css("display","block");
-        $('#foto-frame').html(`<img class="pic-frame" src="${picture}" alt=""></img>`);
-        console.log(picture);
-    });
+     });
+    
 
 }
 
@@ -74,7 +74,6 @@ map.on("click", function (e) {
 
 $('#closebtn').click(function()
 {
-    $('#photo-container').css("display","none");
     
 }
 );
