@@ -333,13 +333,13 @@ body {
 }
 
 #slide2-col2 #photo-container {
-  width: 200px;
+  width: 20%;
 
   position: absolute;
    z-index: 1;
   /* border: 2px solid green; */
   background: white;
-  margin-top: 400px;
+  margin-top: 349.5px;
   display: none;
   
 }
@@ -349,7 +349,7 @@ body {
   color: rgb(44, 41, 41);
   text-align: center;
   font-weight: bold;
-  height: 600px;
+  height: 735px;
   padding: 170px 0 0 0;
   background-size: cover;
 }
@@ -522,5 +522,5 @@ body {
 {
   width: auto;
   position: absolute;
-  margin-top: 20px;
+
 }
