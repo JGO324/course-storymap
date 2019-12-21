@@ -6,7 +6,7 @@ var azores={
         "properties": {
           "name": "Ilha de Sao Miguel",
           "location": "Lagoa do Santiago",
-          "pic": "./img/bob.png"
+          "pic": "https://byacores.com/wp-content/uploads/2017/10/DSC08576.jpg"
         },
         "geometry": {
           "type": "Point",
@@ -21,7 +21,7 @@ var azores={
         "properties": {
           "name": "Ilha de Sao Miguel",
           "location": "Lagoa das Sete Cidases",
-          "pic": "./img/dr-seuss.png"
+          "pic": "https://portuguesecooking.files.wordpress.com/2015/03/lagoa-das-sete-cidades.jpg?w=816&h=9999"
         },
         "geometry": {
           "type": "Point",
@@ -36,7 +36,7 @@ var azores={
         "properties": {
           "name": "Ilha de Sao Miguel",
           "location": "Lagoa do Fogo",
-          "pic": "./img/madeira.jpeg"
+          "pic": "https://experitour.com/wp-content/uploads/2019/02/lagoa-do-fogo-1-768x512.jpg"
         },
         "geometry": {
           "type": "Point",
@@ -51,7 +51,7 @@ var azores={
         "properties": {
           "name": "Ilha do Pico",
           "location": "Reserva Natural da Montanha do Pico",
-          "pic": "come here"
+          "pic": "https://labirintoperpetuo.files.wordpress.com/2011/08/pico.jpg"
         },
         "geometry": {
           "type": "Point",
@@ -66,7 +66,7 @@ var azores={
         "properties": {
           "name": "Ilha do Faial",
           "location": "Cabeço Gordo",
-          "pic": "come here"
+          "pic": "https://farm6.staticflickr.com/5611/15582893202_8b8568ae79_b.jpg"
         },
         "geometry": {
           "type": "Point",
