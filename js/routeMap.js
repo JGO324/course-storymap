@@ -26,7 +26,7 @@
   }).addTo(map);
 
   // add geolocation control to top right window position (Leaflet can handle multiple top-right elements)
-  L.control.locate(locate_options).addTo(map);
+  // L.control.locate(locate_options).addTo(map);
 
   // Get basemap URL from Leaflet Providers
   var basemap_url = 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
