@@ -1,0 +1,935 @@
+/* STYLING FOR NORMAL SCREEN */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  /* background: #eee; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#opacity-box {
+  top: 0;
+  background: whitesmoke;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+#header {
+  width: 100%;
+  /* background: url('../img/header-bg.png'); */
+  background-color: rgba(0, 0, 0, .6);
+  height: 80px;
+  position: fixed;
+  margin-top: 30px;
+  z-index: 1;
+}
+
+#nav {
+  /* width: 410px; */
+  float: right;
+  /* float: left; */
+  margin: 20px;
+
+}
+
+#logo a {
+  color: #fff;
+  text-decoration: none;
+  float: left;
+  font-size: 30px;
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Arvo";
+  font-weight: bold;
+  border: 1px solid tomato;
+}
+
+#nav ul {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#nav li {
+  margin-top: 9px;
+  float: left;
+  padding-left: 21px;
+}
+
+#nav li a {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Wellfleet';
+}
+
+#nav li a.active {
+  color: #fff;
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+}
+
+#nav li a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.content1 .first-page {
+  position: relative;
+  margin: 10% 25%;
+  text-shadow: 0 0 10px purple;
+  padding: 25% auto;
+}
+
+.content1 .first-page h2 {
+  font-family: "Arvo";
+  font-weight: normal;
+  font-size: 350%;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-shadow: #000;
+
+}
+
+.content1 .first-page h3 {
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 200%;
+  text-align: center;
+  margin: 5px 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+
+
+}
+
+.content h1 {
+  font-family: "Arvo";
+  font-weight: normal;
+  font-size: 55px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.content h2 {
+  font-family: "Arvo";
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.content h3 {
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+
+}
+
+.footer {
+  margin: auto 15%;
+}
+
+.footer-col {
+  /* padding-top: 15%; */
+  float: left;
+  display: contents;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.the-content {
+  padding: 0;
+  margin-top: 0 auto;
+  left: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.clear {
+  clear: both;
+}
+
+#christmas_tree {
+  background: url('../img/christmas-tree.png')no-repeat;
+  width: 48px;
+  height: 77px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -35px;
+}
+
+#divider {
+  background: url('../img/divider.png')no-repeat;
+  width: 300px;
+  height: 35px;
+  margin: 0px auto 27px auto;
+}
+
+#ribbon {
+  background: url('../img/ribbon.png')no-repeat;
+  width: 251px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -38px;
+}
+
+#snowflakes1 {
+  background: url('../img/snowflakes.png')no-repeat;
+  width: 24px;
+  height: 21px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  bottom: -54px;
+  left: -102px;
+
+}
+
+#snowflakes2 {
+  background: url('../img/snowflakes.png')no-repeat;
+  width: 24px;
+  height: 21px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  bottom: -33px;
+  right: -100px;
+
+}
+
+#slide1,
+#slide2 {
+  width: 100%;
+}
+
+#slide1 {
+  /* background: url('../img/slide1.jpg')  no-repeat fixed; */
+  background: url('https://adfs.uky.edu/adfs/portal/illustration/illustration.jpg') no-repeat fixed;
+  color: #fff;
+  height: 600px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover;
+}
+
+#slide2-header {
+  background-color: whitesmoke;
+  /* margin: 0 auto; */
+  overflow: hidden;
+  /* padding: 200px 0; */
+}
+
+#slide2-header .content h1 {
+  color: #333333;
+  font-family: "Tangerine", serif;
+  overflow: hidden;
+  font-size: 5em;
+  padding: 3% 10%;
+  /* padding: 200px 0; */
+}
+
+.slide2-content {
+  width: 100%;
+  height: 600px;
+
+}
+
+
+#slide2 {
+
+  background-color: #fff;
+  color: #333333;
+  margin: 0 auto;
+
+}
+
+#slide2-col1 {
+  width: 64%;
+  height: 100%;
+  float: left;
+}
+
+#slide2-col2 {
+
+  width: 34%;
+  height: 100%;
+  float: left;
+}
+#slide2-col2 #txt
+{ 
+  width: 100%;
+  padding: 0 5px;
+  font-size: 120%;
+  color: white;
+  background: orange;
+}
+
+#slide2-col2 .photo-container {
+  width: auto;
+  z-index: 1;
+  background: white;
+  display: none;
+
+}
+
+.slide2-info {
+
+  padding: 0 2%;
+  overflow-y: auto;
+  height: 350px;
+}
+
+.slide2-info .summary,
+.slide2-info .info {
+  padding: 0 10px 0 10px;
+}
+
+.slide2-info .summary h2,
+.slide2-info .info h2,
+.slide2-info .info h3 {
+  font-size: 35px;
+  font-family: "Tangerine", serif;
+}
+
+#slide3 {
+  background: url('../img/azoresIsland.jpeg') 50% 0 no-repeat fixed;
+  color: rgb(44, 41, 41);
+  text-align: center;
+  font-weight: bold;
+  height: 735px;
+  padding: 170px 0 0 0;
+  background-size: cover;
+}
+
+.slide3-content {
+  height: auto;
+  background: rgb(240, 233, 6, .7);
+  position: absolute;
+  display: block;
+  padding: 3%;
+  /* opacity: .5; */
+}
+
+.img-container .caption {
+  margin-top: -45px;
+}
+
+.slide3-content .img-container,
+.slide5-content .img-container {
+  /* width: auto; */
+  float: left;
+  /* background: purple; */
+  width: 21%;
+  padding: 0 14%;
+  height: 395px;
+
+}
+
+.slide3-content .img-container img {
+  width: 150%;
+  clip-path: circle(22% at center);
+  margin: 2% -25%;
+  height: 300px;
+}
+
+.info .highlight {
+  color: darkgoldenrod;
+}
+
+.info a {
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+
+.info a:hover {
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+  background-color: orangered;
+  color: white;
+}
+
+
+
+#slide4-header {
+  background-color: whitesmoke;
+}
+
+#slide4-header .content h1 {
+  color: #333333;
+  font-family: "Tangerine", serif;
+  overflow: hidden;
+  font-size: 5em;
+  padding: 3% 10%;
+  /* padding: 200px 0; */
+}
+
+#slide4 .slide4-content {
+  width: 100%;
+  height: 550px;
+  margin: 0;
+}
+
+#slide4 .slide4-content #slide4-header {
+  color: #333333;
+  font-family: "Tangerine", serif;
+  font-size: 30px;
+  /* font-size: 2.5em; */
+  text-align: center;
+  background: rgb(164, 233, 242);
+}
+
+#slide5 {
+  background: url('../img/madeira.jpeg') 50% 0 no-repeat fixed;
+  /* background-color: #fff; */
+  color: whitesmoke;
+  text-align: center;
+  height: 300px;
+  padding: 200px 0;
+}
+
+
+.slide6-content {
+  height: 550px;
+  margin: 0 auto;
+  background: whitesmoke;
+  /* display: none; */
+}
+
+.slide6-col1 {
+  width: 36%;
+  height: 550px;
+  /* border: 2px solid black; */
+  float: left;
+}
+
+.slide6-col1 #about {
+  margin: auto 5px;
+  font-family: "Arvo";
+  /* font-weight: normal; */
+}
+
+
+.slide6-col2 {
+  width: 63.3%;
+  height: 550px;
+  /* border: 2px solid black; */
+  float: right;
+}
+
+#slide7 {
+  background: url('../img/routeplanner.jpeg') 50% 0 no-repeat fixed;
+  margin: 0 auto;
+  padding: 250px 0;
+  color: #fff;
+  background-size: cover;
+}
+
+#slide7 .content {
+  padding: 180px 0;
+}
+
+#slide7 .content .last-page {
+  background: url('../img/merry_christmas.jpeg')no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.pic-frame {
+  width: 100%;
+  height: 100%;
+}
+
+#closebar {
+  background: #adc3d8;
+  height: 20px;
+
+}
+
+#closebar #closebtn {
+  right: 8px;
+  padding: 1px;
+  position: absolute;
+  padding: 2px;
+
+}
+
+#closebar #closebtn:hover {
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: orange;
+}
+
+#foto-frame {
+  width: auto;
+  /* position: absolute; */
+
+}
+.caption-text
+{
+  padding:0 15px;
+}
+.caption-text a
+{
+font-weight: bold;
+color: orange
+}
+
+/* MOBILE */
+@media only screen and (max-width: 420px),
+(max-height: 420px) {
+
+  #opacity-box {
+    width: 100%;
+    /* height: 131%; */
+    height: 1060px;
+
+  }
+
+  #header {
+    display: none;
+
+  }
+
+  .content1 {
+    top: 20%;
+    position: absolute;
+  }
+
+
+  .content1 .first-page {
+    position: relative;
+    margin: 10% 25%;
+    text-shadow: 0 0 10px purple;
+    padding: 25% auto;
+  }
+
+  .content1 .first-page h2 {
+    font-family: "Arvo";
+    font-weight: normal;
+    font-size: 250%;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-shadow: #000;
+
+  }
+
+  .content1 .first-page h3 {
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 200%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+  }
+
+  .content h1 {
+    font-family: "Arvo";
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content h2 {
+    font-family: "Arvo";
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content h3 {
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+
+  }
+
+  .footer {
+    margin: 0;
+    position: absolute;
+    height: 215px;
+    border: 1px solid white;
+    display: none
+  }
+
+  .m-footer {
+    margin: 0;
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  .center {
+    margin: 0 auto;
+  }
+
+  .the-content {
+    padding: 0;
+    margin-top: 0 auto;
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  
+  #christmas_tree {
+    background: url('../img/christmas-tree.png')no-repeat;
+    width: 48px;
+    height: 77px;
+    margin: 0 auto;
+    position: relative;
+    bottom: -35px;
+  }
+
+  #divider {
+    background: url('../img/divider.png')no-repeat;
+    width: 300px;
+    height: 35px;
+    margin: 0px auto 27px auto;
+  }
+
+  #ribbon {
+    background: url('../img/ribbon.png')no-repeat;
+    width: 251px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -38px;
+  }
+
+  #snowflakes1 {
+    background: url('../img/snowflakes.png')no-repeat;
+    width: 24px;
+    height: 21px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    bottom: -54px;
+    left: -102px;
+
+  }
+
+  #snowflakes2 {
+    background: url('../img/snowflakes.png')no-repeat;
+    width: 24px;
+    height: 21px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    bottom: -33px;
+    right: -100px;
+
+  }
+
+  #slide1,
+  #slide2 {
+    width: 100%;
+  }
+
+  #slide1 {
+    /* background: url('../img/slide1.jpg')  no-repeat fixed; */
+    background: url('https://adfs.uky.edu/adfs/portal/illustration/illustration.jpg') no-repeat fixed;
+    color: #fff;
+    height: 600px;
+    margin: 0;
+    padding: 200px 0 260px 0;
+    background-size: cover;
+  }
+
+  #slide2-header {
+    background-color: whitesmoke;
+    /* margin: 0 auto; */
+    overflow: hidden;
+    font-size: 8px;
+    /* padding: 200px 0; */
+  }
+
+  #slide2-header .content h1 {
+    color: #333333;
+    font-family: "Tangerine", serif;
+    overflow: hidden;
+    font-size: 5em;
+    padding: 3% 10%;
+    /* padding: 200px 0; */
+  }
+
+  .slide2-content {
+    width: 100%;
+    height: auto;
+
+  }
+
+
+  #slide2 {
+
+    background-color: #fff;
+    color: #333333;
+    /* height: 300px; */
+    margin: 0 auto;
+    /* margin: 18.5% 0 0 0; */
+    /* overflow: hidden; */
+    /* padding: 200px 0; */
+  }
+
+  #slide2-col1 {
+    width: 100%;
+    height: 350px;
+
+    float: left;
+    display: block;
+
+  }
+
+  .slide2-info {
+    padding: 0 2%;
+    overflow-y: auto;
+    height: 350px;
+  }
+
+  .slide2-info .summary,
+  .slide2-info .info {
+    padding: 0 10px 0 10px;
+  }
+
+  .slide2-info .summary h2,
+  .slide2-info .info h2,
+  .slide2-info .info h3 {
+    font-size: 35px;
+    font-family: "Tangerine", serif;
+  }
+
+  #slide2-col2 {
+    width: 100%;
+    border-bottom: 5px solid black;
+
+  }
+
+
+  #slide3 {
+    background: url('../img/azoresIsland.jpeg') 50% 0 no-repeat fixed;
+    color: rgb(44, 41, 41);
+    text-align: center;
+    font-weight: bold;
+    height: 950px;
+    padding: 170px 0 0 0;
+    background-size: cover;
+  }
+
+  .slide3-content {
+    height: auto;
+    background: rgb(240, 233, 6, .7);
+    position: absolute;
+    display: block;
+    padding: 3%;
+    /* opacity: .5; */
+  }
+
+  .img-container .caption {
+    margin: 0;
+  }
+
+  .slide3-content .img-container,
+  .slide5-content .img-container {
+    /* width: auto; */
+    float: left;
+    /* background: purple; */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .slide3-content .img-container img {
+    width: 100%;
+    clip-path: circle(22% at center);
+    margin: 0;
+    height: 300px;
+  }
+
+  .info .highlight {
+    color: darkgoldenrod;
+  }
+
+  .info a {
+    text-decoration: none;
+    color: darkgoldenrod;
+  }
+
+  .info a:hover {
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+  }
+
+
+
+  #slide4-header {
+    background-color: whitesmoke;
+  }
+
+  #slide4-header .content h1 {
+    color: #333333;
+    font-family: "Tangerine", serif;
+    overflow: hidden;
+    font-size: 3em;
+    padding: 3% 10%;
+    /* padding: 200px 0; */
+  }
+
+  #slide4 .slide4-content {
+    width: 100%;
+    height: 550px;
+    margin: 0;
+  }
+
+  #slide4 .slide4-content #slide4-header {
+    color: #333333;
+    font-family: "Tangerine", serif;
+    font-size: 30px;
+    /* font-size: 2.5em; */
+    text-align: center;
+    background: rgb(164, 233, 242);
+  }
+
+  #slide5 {
+    background: url('../img/madeira.jpeg') 50% 0 no-repeat fixed;
+    /* background-color: #fff; */
+    color: whitesmoke;
+    text-align: center;
+    height: 550px;
+    padding: 60px 0;
+  }
+
+
+  .slide6-content {
+    /* background: url('../img/routeplanner.jpeg') 50% 0 no-repeat fixed; */
+    height: 550px;
+    margin: 0 auto;
+    /* padding: 250px 0; */
+    /* color: #fff; */
+    background: whitesmoke;
+    /* display: none; */
+  }
+
+  .slide6-col1 {
+    width: 36%;
+    height: 550px;
+    /* border: 2px solid black; */
+    float: left;
+    display: none;
+  }
+
+  .slide6-col1 #about {
+    margin: auto 5px;
+    font-family: "Arvo";
+    /* font-weight: normal; */
+  }
+
+
+  .slide6-col2 {
+    width: 100%;
+    height: 550px;
+    /* border: 2px solid black; */
+    /* float: right; */
+  }
+
+  #slide7 {
+    background: url('../img/routeplanner.jpeg') 50% 0 no-repeat fixed;
+    height: 200px;
+    margin: 0 auto;
+    padding: 250px 0;
+    color: #fff;
+    background-size: cover;
+  }
+
+  #slide7 .content {
+    padding: 26px 0;
+  }
+
+  #slide7 .content .last-page {
+    background: url('../img/merry_christmas.jpeg')no-repeat;
+    /* background-size: cover; */
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .pic-frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  #closebar {
+    background: #adc3d8;
+    height: 20px;
+
+  }
+
+  #closebar #closebtn {
+    right: 8px;
+    padding: 1px;
+    position: absolute;
+    padding: 2px;
+
+  }
+
+  
+
+  .foto-frame {
+    width: auto;
+    padding: 0 0 60px 0;
+
+  }
+}
