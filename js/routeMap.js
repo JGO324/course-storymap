@@ -127,16 +127,16 @@
 
   map.fitBounds(myRoutePlan.getBounds());
 
-  var aboutIsOpened = false;
-  document.getElementById("about").addEventListener("click", function () {
+  // var aboutIsOpened = false;
+  // document.getElementById("about").addEventListener("click", function () {
 
-    if (!aboutIsOpened) {
+  //   if (!aboutIsOpened) {
 
-      document.getElementById("content").style.display = "block";
-      document.getElementById("content").style.height = "200px";
-    } else {
-      document.getElementById("content").style.display = "none";
-      aboutIsOpened = true;
-    }
-    aboutIsOpened = !aboutIsOpened;
-  });
+  //     document.getElementById("content").style.display = "block";
+  //     document.getElementById("content").style.height = "200px";
+  //   } else {
+  //     document.getElementById("content").style.display = "none";
+  //     aboutIsOpened = true;
+  //   }
+  //   aboutIsOpened = !aboutIsOpened;
+  // });
