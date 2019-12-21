@@ -2,18 +2,22 @@
 /*********************************** Azores MAP ************************************/
 /***********************************************************************************/
 var options = {
-    center: [38.1925496, -27.4106139],
-    zoom: 8,
+    center: [38.514325529001326, -27.15395251781775],
+    // zoom: 6,
+   	
 
 }
 
 var azores_map = L.map('azoresMap', options);
+var corner1=[37.396482510021585,-25.123668640229948];
+var corner2=[39.266417324437775,-28.965345039930856];
+azores_map.fitBounds([corner1,corner2]);
 // var basemap_url='https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png';
 var basemap_url =
-    'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}'
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
 // var basemap_url = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/light_all/{z}/{x}/{y}.png'
 var basemap_attributes = {
-    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
     subdomains: 'abcd',
     minZoom: 0,
     maxZoom: 19,
@@ -21,6 +25,9 @@ var basemap_attributes = {
 }
 var tiles = L.tileLayer(basemap_url, basemap_attributes).addTo(azores_map);
 
+azores_map.on("click", function (e) {
+    console.log(e.latlng);
+});
 
 var myLocationLayer = L.geoJSON(azores, {
     pointToLayer: function (azoresLayer, azoresLatlng) {
@@ -28,26 +35,24 @@ var myLocationLayer = L.geoJSON(azores, {
     },
     onEachFeature: function (azoresFeature, azoresLayer) {
         azoresLayer.on("click", function (e) {
+            console.log(e);
             azores_map.panTo(e.latlng); //When user click on the marker, the marker move to the center
-            azores_map.setView(e.latlng, 11);
-        });
-        azoresLayer.on("mouseover", function () {
-            console.log(azoresFeature);
-            let loc = azoresFeature.properties.location;
-            let picture = azoresFeature.properties.pic;
+            azores_map.flyTo(e.latlng, 11);
+            var loc = azoresFeature.properties.location;
+            var picture = azoresFeature.properties.pic;
+            var capt=azoresFeature.properties.caption;
+            var website=azoresFeature.properties.web;
             azoresLayer.bindPopup(loc).openPopup();
-
-            $('#photo-container').css("display", "block");
-            $('#foto-frame').html(`<img class="pic-frame" src="${picture}" alt=""></img>`);
-        });
-        azoresLayer.on("mouseout", function () {
-            let loc = azoresFeature.properties.location;
-            azoresLayer.bindPopup(loc).closePopup();
-            $('#photo-container').css("display", "none");
+            $('.photo-container').css("display", "block");
+            $('.foto-frame').html(`<img class="pic-frame" src="${picture}" alt=""></img>`);
+            $('.foto-frame').append(`<p class="caption-text">${capt}</br><a href="${website}">website</a></p>`);
 
         });
+
+        
 
 
     }
 
 }).addTo(azores_map);
+
