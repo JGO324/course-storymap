@@ -10,11 +10,11 @@ var options = {
   // CREATE LEAFLET MAP WITH ABOVE OPTIONS.
   var map = L.map('madeiraMap', options);
   // GET BASEMAP URL FROM LEAFLET PROVIDERS
-  var basemap_url = 'http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}'
+  var basemap_url = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png'
 
   // GET BASEMAP ATTRIBUTES FROM LEAFLET PROVIDERS
   var basemap_attributes = {
-    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
     subdomains: 'abcd',
     minZoom: 1,
     maxZoom: 16,
