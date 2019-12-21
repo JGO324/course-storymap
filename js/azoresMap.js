@@ -3,17 +3,25 @@
 /***********************************************************************************/
 var options = {
     center: [38.1925496, -27.4106139],
-    zoom: 8
+    zoom: 8,
+    
 }
+
+var Stamen_Terrain = L.tileLayer('', {
+	
+});
 
 var map = L.map('azoresMap', options);
 // var basemap_url='https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/{z}/{x}/{y}.png';
 var basemap_url =
-    'https://server.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer/tile/{z}/{y}/{x}'
+    'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}'
 // var basemap_url = 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/light_all/{z}/{x}/{y}.png'
 var basemap_attributes = {
-    attribution: '&copy; <a href="https://www.arcgis.com">Esri &mdash; Copyright: &copy;2012 DeLorme</a>',
-    maxZoom: 19
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	subdomains: 'abcd',
+	minZoom: 0,
+	maxZoom: 19,
+	ext: 'png'
 }
 var tiles = L.tileLayer(basemap_url, basemap_attributes).addTo(map);
 
