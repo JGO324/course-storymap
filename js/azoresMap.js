@@ -36,7 +36,8 @@ onEachFeature: function(feature,layer){
     layer.on("click",function(e){
 
        let picture=feature.properties.pic;
-        $('#photo-container').html(`<img class="pic-frame" src="${picture}" alt=""></img>`);
+        $('#photo-container').css("display","block");
+        $('#foto-frame').html(`<img class="pic-frame" src="${picture}" alt=""></img>`);
         console.log(picture);
     });
 
@@ -62,3 +63,12 @@ map.on("click", function (e) {
     // console.log(map);
     // map.setView(coor, 18);
 });
+
+$('#closebtn').click(function()
+{
+    $('#photo-container').css("display","none");
+    
+}
+);
+
+// 
