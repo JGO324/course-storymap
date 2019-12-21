@@ -26,8 +26,9 @@
   <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-  crossorigin="" />  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
 
   <!-- Local css -->
   <link rel="stylesheet" href="css/normalStyle.css">
@@ -184,10 +185,8 @@
         </div>
         <div id="slide2-col2">
           <div id="photo-container">
-            <div id="closebar">
-              <div id="closebtn">close</div> 
-              <div id="foto-frame"></div>
-          </div>
+            
+            <div id="foto-frame"></div>
           </div>
           <div id='azoresMap'></div>
         </div>
@@ -268,7 +267,7 @@
                 </li>
                 <li>Then I choosed three coordinates from the geojson and add 3 more point
                   feature to the data with extra content.</li>
-                <li>Change the geojson file extention to .js. <a href="data/map_org.js">download data</a></li>
+                <li>Change the geojson file extention to .js. <a href="data/routeData.js">download data</a></li>
               </ul>
               <!-- <a href="data/map_org.js">The data</a> and map goes here. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Duis urna magna, maximus nec laoreet sit amet, dictum ultricies nibh. Ut id
@@ -286,7 +285,7 @@
 
     <div id="slide7">
       <div class="content">
-           <section class="last-page">
+        <section class="last-page">
           <div class="content">
             <div id="christmas_tree"> </div>
             <div id="snowflakes1"></div>
@@ -297,10 +296,10 @@
             <h3>HAPPY NEW YEAR </h3>
             <div id="ribbon"></div>
         </section>
-        </div>
-        <!-- <div id="copyright"><a href="https://1stwebdesigner.com/">Copyright 1stwebdesigner.com </a></div> -->
       </div>
+      <!-- <div id="copyright"><a href="https://1stwebdesigner.com/">Copyright 1stwebdesigner.com </a></div> -->
     </div>
+  </div>
   </div>
   <!-- SLIDE END -->
 
@@ -451,14 +450,15 @@
 
   <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-  crossorigin=""></script>
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
   <!-- Load a Leaflet plugin to provide geolocation. -->
-  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
-  
-  <script src = "js/madeiraMap.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8">
+  </script>
+
+  <script src="js/madeiraMap.js"></script>
   <script src="js/azoresMap.js"></script>
   <script src="js/routeMap.js"></script>
   <script>
@@ -478,6 +478,33 @@
         el: '.swiper-pagination-v',
         clickable: true,
       },
+
+    });
+
+    $(document).ready(function () {
+      $("a").each(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+          location.hostname == this.hostname && this.hash.replace(/#/, '')) {
+          var $targetId = $(this.hash),
+            $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+          var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+          if ($target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function () {
+              $("#nav li a").removeClass("active");
+              $(this).addClass('active');
+              $('html, body').animate({
+                scrollTop: targetOffset
+              }, 1000);
+              return false;
+            });
+          }
+        }
+
+      });
+
+
+
 
     });
   </script>
