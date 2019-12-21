@@ -54,7 +54,7 @@ body {
   font-size: 30px;
   margin-top: 20px;
   color: #fff;
-  font-family: "Wellfleet";
+  font-family: "Arvo";
   font-weight: bold;
   border: 1px solid tomato;
 }
@@ -460,7 +460,10 @@ body {
 
 .slide6-col1 #about {
   margin: auto 5px;
+  font-family: "Arvo";
+  /* font-weight: normal; */
 }
+
 
 .slide6-col2 {
   width: 63.3%;
