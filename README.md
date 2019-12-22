@@ -15,7 +15,7 @@ I choose 3 maps of my previous course of map672. these are:
 
 -	A vacation to Azores
 -	A vacation to Madeira
--	and a route map of my daily route to work.
+-	And a route map of my daily route to work.
 
 
 To create the story map, I need to create 3 js script file for each map for 3 different div map area.
