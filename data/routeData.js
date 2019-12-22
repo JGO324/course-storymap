@@ -324,7 +324,8 @@ var myRoute = {
             "type": "Feature",
             "properties": {
                 "name":"Home",
-                "adress":"Kaya Kent U Zelf"
+                "adress":"Kaya Kent U Zelf",
+                "stops":"home"
             },
             "geometry": {
                 "type": "Point",
@@ -339,7 +340,8 @@ var myRoute = {
             "type": "Feature",
             "properties": {
                 "name":"Quick Food",
-                "adress":"Kaya Jacob Ponser z/n"
+                "adress":"Kaya Jacob Ponser z/n",
+                "stops":"restaurant"
             },
             "geometry": {
                 "type": "Point",
@@ -354,7 +356,9 @@ var myRoute = {
             "type": "Feature",
             "properties": {
                 "name":"Work",
-                "adress":"Presidente Rumulo Blvd "
+                "adress":"Presidente Rumulo Blvd ",
+                "stops":"work"
+
             },
             "geometry": {
                 "type": "Point",
