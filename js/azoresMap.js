@@ -30,8 +30,25 @@ azores_map.on("click", function (e) {
 });
 
 var myLocationLayer = L.geoJSON(azores, {
-    pointToLayer: function (azoresLayer, azoresLatlng) {
-        return L.marker(azoresLatlng);
+    pointToLayer: function (azoresFeature, azoresLatlng) {
+        
+        //change icon by category
+        switch(azoresFeature.properties.cat)
+        {
+            case "lake":
+                var lakeIcon=L.icon({
+                    iconUrl:'./img/lake.png',
+                    iconSize:[40,40]
+                });
+            return L.marker(azoresLatlng,{icon:lakeIcon});
+            case "montain":
+                var montainIcon=L.icon({
+                    iconUrl:'./img/montain.png',
+                    iconSize:[40,40]
+                });
+            return L.marker(azoresLatlng,{icon:montainIcon});
+        }
+        
     },
     onEachFeature: function (azoresFeature, azoresLayer) {
         azoresLayer.on("click", function (e) {
