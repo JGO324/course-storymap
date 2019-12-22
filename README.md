@@ -28,7 +28,7 @@ To create the story map, I need to create 3 js script file for each map for 3 di
 ```
 
 
-This is all I need to do to create this story map and some css to manipulate the layout of the parallax.
+This is all I need to do to create this story map in different div elements in the layout and some css to manipulate the layout of the parallax.
 
 I want to Thanks Boyd for this courses so I can improve my skills.
 
