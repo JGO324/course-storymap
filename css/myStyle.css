@@ -277,6 +277,7 @@ body {
   width: 64%;
   height: 100%;
   float: left;
+  z-index: 0;
 }
 
 #slide2-col2 {
@@ -284,6 +285,7 @@ body {
   width: 34%;
   height: 100%;
   float: left;
+  padding: 0 2px;
 }
 #slide2-col2 #txt
 { 
@@ -753,7 +755,7 @@ color: orange
   #slide2-col2 {
     width: 100%;
     border-bottom: 5px solid black;
-
+    padding: 0;
   }
 
 
