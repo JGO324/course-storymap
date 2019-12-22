@@ -51,7 +51,7 @@ body {
   color: #fff;
   font-family: "Arvo";
   font-weight: bold;
-  
+
 }
 
 #nav ul {
@@ -287,13 +287,14 @@ body {
   float: left;
   padding: 0 2px;
 }
-#slide2-col2 #txt
-{ 
+
+#slide2-col2 #txt {
   width: 100%;
   padding: 0 5px;
   font-size: 120%;
   color: white;
-  background: orange;
+  background: #0c213c;
+  margin: 0;
 }
 
 #slide2-col2 .photo-container {
@@ -499,15 +500,24 @@ body {
   /* position: absolute; */
 
 }
-.caption-text
-{
-  padding:0 15px;
+
+.caption-text {
+  padding: 0 15px;
 }
-.caption-text a
-{
-font-weight: bold;
-color: orange
+
+.caption-text a {
+  font-weight: bold;
+  color: orange
 }
+
+footer {
+  padding: 0 5%;
+  font-family: "Arvo";
+}
+footer img {
+  padding: 0 20px;
+ }
+
 
 /* MOBILE */
 @media only screen and (max-width: 420px),
@@ -624,7 +634,7 @@ color: orange
     clear: both;
   }
 
-  
+
   #christmas_tree {
     background: url('../img/christmas-tree.png')no-repeat;
     width: 48px;
@@ -926,8 +936,6 @@ color: orange
     padding: 2px;
 
   }
-
-  
 
   .foto-frame {
     width: auto;
