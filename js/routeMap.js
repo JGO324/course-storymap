@@ -41,19 +41,7 @@
   var tiles = L.tileLayer(basemap_url, basemap_attributes);
 
   map.addLayer(tiles);
-  /*********************************************/
-  /***************** Temporary *****************/
-  /*********************************************/
-
-  var message = '<h2>University of Kentucky!</h2>Department of Geography';
-
-  // L.marker(map.getCenter())
-  //   .bindPopup(message)
-  //   .addTo(map)
-
-
-
-
+ 
   /************* extract only the LineString to style the path ******************/
   /******  Track is divided in 2 routes using the OsmAnd+ android app ***********/
   var layerGr = L.layerGroup();
@@ -99,6 +87,33 @@
   /******** extract only the Points **************/
   /****** My stops added to the route ***********/
   var myStops = L.geoJson(myRoute, {
+    pointToLayer: function (feature, latlng) {
+      console.log(feature);
+          //change icon by category
+          var props=feature.properties;
+          switch(props.stops)
+          {
+              case "home":
+                  var homeIcon=L.icon({
+                      iconUrl:'./img/home.png',
+                      iconSize:[40,40]
+                  });
+              return L.marker(latlng,{icon:homeIcon});
+              case "restaurant":
+                var restaurantIcon=L.icon({
+                    iconUrl:'./img/snack_restaurant.png',
+                    iconSize:[40,40]
+                });
+            return L.marker(latlng,{icon:restaurantIcon});
+              case "work":
+                  var workIcon=L.icon({
+                      iconUrl:'./img/work.png',
+                      iconSize:[40,40]
+                  });
+              return L.marker(latlng,{icon:workIcon});
+          }
+      
+        },
     filter: function (feature) {
       let featureType = feature.geometry.type;
       if (featureType == 'Point') {
