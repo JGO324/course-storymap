@@ -150,11 +150,11 @@ body {
 
 }
 
-.footer {
-  margin: auto 15%;
+.page-footer {
+  margin: auto 20%;
 }
 
-.footer-col {
+.page-footer .footer-col {
   /* padding-top: 15%; */
   float: left;
   display: contents;
@@ -510,11 +510,11 @@ body {
   color: orange
 }
 
-footer {
+.footer {
   padding: 0 5%;
   font-family: "Arvo";
 }
-footer img {
+.footer img {
   padding: 0 20px;
  }
 
@@ -611,12 +611,7 @@ footer img {
     display: none
   }
 
-  .m-footer {
-    margin: 0;
-    text-align: center;
-    border: 1px solid white;
-  }
-
+ 
   .center {
     margin: 0 auto;
   }
@@ -923,20 +918,7 @@ footer img {
     height: 100%;
   }
 
-  #closebar {
-    background: #adc3d8;
-    height: 20px;
-
-  }
-
-  #closebar #closebtn {
-    right: 8px;
-    padding: 1px;
-    position: absolute;
-    padding: 2px;
-
-  }
-
+ 
   .foto-frame {
     width: auto;
     padding: 0 0 60px 0;
