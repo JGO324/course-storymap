@@ -67,7 +67,7 @@ console.log(madeiraFeature);
                     <div class="middle"><a id="infoL" href="${props.web}">
                       <div class="text">Click</div>
                    </a></div>`
-      popup += `</br><b><span>${props.state}</span></b></br>
+      popup += `</br><b><span>${props.location}</span></b></br>
                   <b>Population</b>: ${props.pop.toLocaleString()}`;
       if (props.capital == true) {
         popup += `</br><b>Capital of:</b> ${props.state}`;
