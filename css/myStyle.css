@@ -118,6 +118,10 @@ body {
 
 }
 
+.content1 .first-page .footer-col {
+  text-align: center;
+}
+
 .content h1 {
   font-family: "Arvo";
   font-weight: normal;
@@ -514,9 +518,10 @@ body {
   padding: 0 5%;
   font-family: "Arvo";
 }
+
 .footer img {
   padding: 0 20px;
- }
+}
 
 
 /* MOBILE */
@@ -546,7 +551,7 @@ body {
     margin: 10% 25%;
     text-shadow: 0 0 10px purple;
     padding: 25% auto;
-  }
+  } */
 
   .content1 .first-page h2 {
     font-family: "Arvo";
@@ -611,7 +616,7 @@ body {
     display: none
   }
 
- 
+
   .center {
     margin: 0 auto;
   }
@@ -918,7 +923,7 @@ body {
     height: 100%;
   }
 
- 
+
   .foto-frame {
     width: auto;
     padding: 0 0 60px 0;
